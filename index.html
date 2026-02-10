@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALPA Systems | Fiber-Optic Defense Drones & EW-Immune Unmanned Systems</title>
+<meta name="description" content="ALPA Systems builds EW-immune unmanned defense drones with fiber-optic communications. Modular, low-cost FPV, bomber & tethered platforms designed and manufactured in Spain for NATO-aligned defense forces.">
+<meta name="keywords" content="defense drones, fiber optic FPV drone, EW immune UAV, unmanned defense systems, military drones Spain, tethered drone, bomber drone, anti-jamming drone, fiber optic communications drone, NATO drone systems, modular military drone, low-cost defense UAV, loitering munition, tactical unmanned systems">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ALPA Systems">
+<link rel="canonical" href="https://alpasystems.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ALPA Systems | Fiber-Optic Defense Drones & EW-Immune Unmanned Systems">
+<meta property="og:description" content="Modular, EW-immune unmanned defense drones with fiber-optic comms. Designed and manufactured in Spain.">
+<meta property="og:url" content="https://alpasystems.com/">
+<meta property="og:site_name" content="ALPA Systems">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ALPA Systems | Fiber-Optic Defense Drones">
+<meta name="twitter:description" content="EW-immune unmanned defense systems with fiber-optic communications. Designed in Spain.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ALPA Systems",
+  "url": "https://alpasystems.com",
+  "description": "Designer and manufacturer of EW-immune unmanned defense drones with fiber-optic communications",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Madrid",
+    "addressCountry": "ES"
+  },
+  "sameAs": ["https://github.com/alpadrones"],
+  "knowsAbout": ["Defense Drones", "Fiber-Optic Communications", "Unmanned Aerial Systems", "Electronic Warfare Resilience"]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='20,3 37,35 3,35' fill='none' stroke='%234a6741' stroke-width='2'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0a0c0a;--night:#111411;--charcoal:#1a1e1a;--slate:#252b25;--stone:#3a423a;
+  --mist:#6b756b;--fog:#9ca49c;--cloud:#c8cec8;--smoke:#e4e8e4;--pearl:#f2f4f2;--white:#fafbfa;
+  --olive:#4a6741;--olive-light:#6b8f5e;--olive-pale:#dce8d7;--olive-glow:rgba(74,103,65,.15);
+  --sand:#b09b6b;--sand-light:#d4c49a;
+  --ease:cubic-bezier(.23,1,.32,1);--ease-out:cubic-bezier(0,0,.2,1);--ease-dramatic:cubic-bezier(.16,1,.3,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--ink);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img,video{max-width:100%;display:block}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.028;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--white)}::-webkit-scrollbar-thumb{background:var(--cloud);border-radius:2px}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;transition:all .5s var(--ease)}
+.nav::before{content:'';position:absolute;inset:0;backdrop-filter:blur(30px) saturate(1.8);opacity:0;transition:all .5s;z-index:-1}
+.nav.scrolled::before{opacity:1}
+.nav.scrolled{box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.nav.nav-light::before{background:rgba(250,251,250,.88)}
+.nav.nav-dark::before{background:rgba(17,20,17,.75)}
+.nav.nav-light .nav-links a{color:var(--mist)}.nav.nav-light .nav-links a:hover,.nav.nav-light .nav-links a.active{color:var(--ink)}
+.nav.nav-dark .nav-links a{color:var(--fog)}.nav.nav-dark .nav-links a:hover,.nav.nav-dark .nav-links a.active{color:var(--white)}
+.nav.nav-dark .nav-links a.active::after{background:var(--olive-light)}
+.nav.nav-dark .nav-toggle span{background:var(--white)}
+.nav.nav-dark .nav-logo img{filter:brightness(10)}
+.nav-logo{cursor:pointer;transition:opacity .3s}.nav-logo:hover{opacity:.6}.nav-logo img{height:36px;width:auto}
+.nav-links{display:flex;list-style:none;gap:2px}
+.nav-links a{display:block;padding:8px 18px;font-family:'JetBrains Mono',monospace;font-size:.65rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--mist);transition:all .3s var(--ease);border-radius:6px;position:relative}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.nav-links a.active::after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:4px;height:4px;background:var(--olive);border-radius:50%}
+.nav-dd{position:relative}
+.nav-dd-menu{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(8px);min-width:220px;background:var(--white);border:1px solid var(--smoke);border-radius:12px;padding:8px;opacity:0;visibility:hidden;transition:all .3s var(--ease);box-shadow:0 20px 60px rgba(0,0,0,.08);z-index:100}
+.nav-dd:hover .nav-dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.nav-dd-menu a{font-size:.6rem;padding:10px 14px;border-radius:8px;display:block;color:var(--mist)}.nav-dd-menu a:hover{background:var(--pearl);color:var(--ink)}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.nav-toggle span{display:block;width:20px;height:1.5px;background:var(--ink);margin:5px 0;border-radius:1px;transition:.3s}
+
+.container{max-width:1200px;margin:0 auto}.section{padding:120px 48px}.section-dark{background:var(--night);color:var(--cloud)}
+.label{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:4px;text-transform:uppercase;color:var(--olive);margin-bottom:16px;display:inline-block}
+.section-dark .label{color:var(--olive-light)}
+h2.title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:20px}
+.section-dark h2.title{color:var(--white)}
+.desc{font-weight:400;color:var(--mist);max-width:520px;line-height:1.8;font-size:.95rem}.section-dark .desc{color:var(--fog)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:400;font-size:.68rem;letter-spacing:1px;text-transform:uppercase;padding:14px 32px;border-radius:100px;border:none;cursor:pointer;transition:all .4s var(--ease);position:relative;overflow:hidden}
+.btn-fill{background:var(--olive);color:var(--white)}.btn-fill:hover{background:var(--ink);box-shadow:0 8px 30px rgba(0,0,0,.15);transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:1.5px solid var(--cloud);color:var(--ink)}.btn-ghost:hover{border-color:var(--ink);background:var(--ink);color:var(--white)}
+.btn-light{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:var(--white);backdrop-filter:blur(10px)}.btn-light:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.3)}
+.arr{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}.btn:hover .arr{transform:translateX(3px)}
+
+.media-slot{position:relative;overflow:hidden;border-radius:12px;background:var(--slate)}
+.media-slot img,.media-slot video{width:100%;height:100%;object-fit:cover;border-radius:inherit;transition:transform .8s var(--ease)}
+.page{display:none}.page.active{display:block}
+
+.hero{position:relative;height:100vh;overflow:hidden;background:var(--ink)}
+.hero-media{position:absolute;inset:0;z-index:0}.hero-media .media-slot{width:100%;height:100%;border:none;border-radius:0}
+.hero-grad{position:absolute;inset:0;z-index:1}
+.hero-grad-top{position:absolute;top:0;left:0;right:0;height:35%;background:linear-gradient(180deg,rgba(10,12,10,.55) 0%,transparent 100%)}
+.hero-grad-bot{position:absolute;bottom:0;left:0;right:0;height:55%;background:linear-gradient(0deg,rgba(10,12,10,.85) 0%,rgba(10,12,10,.4) 40%,transparent 100%)}
+.hero-content{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 72px}
+.hero-content .container{width:100%}
+.hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:6px;text-transform:uppercase;color:var(--sand-light);margin-bottom:24px;opacity:0;animation:slideUp .8s var(--ease-dramatic) .3s forwards}
+.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-.04em;color:var(--white);margin-bottom:28px;opacity:0;animation:slideUp .8s var(--ease-dramatic) .5s forwards}
+.hero h1 .olive{color:var(--olive-light)}.hero h1 .sand{color:var(--sand)}
+.hero-desc{font-size:.95rem;color:rgba(255,255,255,.55);line-height:1.8;max-width:480px;margin-bottom:40px;opacity:0;animation:slideUp .8s var(--ease-dramatic) .7s forwards}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:slideUp .8s var(--ease-dramatic) .9s forwards}
+@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+.hero-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadeIn 1s ease 1.5s forwards}
+.hero-scroll span{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.3)}
+.hero-scroll-line{width:1px;height:40px;background:linear-gradient(180deg,rgba(255,255,255,.3),transparent);animation:scrollPulse 2s ease infinite}
+@keyframes scrollPulse{0%,100%{opacity:.3;transform:scaleY(1)}50%{opacity:.8;transform:scaleY(1.2)}}
+@keyframes fadeIn{to{opacity:1}}
+
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.pcard{background:var(--pearl);cursor:pointer;transition:all .5s var(--ease);position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--smoke)}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.08);border-color:var(--cloud)}
+.pcard-img{height:280px;overflow:hidden;background:linear-gradient(180deg,#e8ece8 0%,#d8ddd8 100%)}.pcard-img img{width:100%;height:100%;object-fit:contain;transition:transform .8s var(--ease);padding:20px}
+.pcard:hover .pcard-img img{transform:scale(1.06)}
+.pcard-info{padding:24px 28px}
+.pcard-info h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.05rem;color:var(--ink);margin-bottom:6px}
+.pcard-info p{font-size:.82rem;color:var(--mist);line-height:1.6;margin-bottom:14px}
+.pcard-link{font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--olive);display:inline-flex;align-items:center;gap:8px;transition:gap .3s}
+.pcard:hover .pcard-link{gap:12px}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.split.r .sp-txt{order:2}.split.r .sp-img{order:1}
+.sp-txt h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(1.6rem,2.5vw,2.2rem);line-height:1.15;margin-bottom:18px;letter-spacing:-.01em}
+.sp-txt p{color:var(--mist);line-height:1.85;margin-bottom:14px;font-size:.93rem}
+.sp-img .media-slot{height:420px}
+
+.gallery-main{margin-bottom:12px}.gallery-main .media-slot{height:440px;border-radius:14px;background:linear-gradient(180deg,#e8ece8,#d8ddd8)}.gallery-main .media-slot img{object-fit:contain;padding:24px}
+.gallery-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gallery-pair .media-slot{height:220px;border-radius:14px;background:linear-gradient(180deg,#e8ece8,#d8ddd8)}.gallery-pair .media-slot img{object-fit:contain;padding:16px}
+
+.showcase{max-width:860px;margin:0 auto}.showcase .media-slot{height:480px;border-radius:16px;background:var(--slate);box-shadow:0 30px 80px rgba(0,0,0,.12)}.showcase .media-slot video{object-fit:contain}
+
+.cblock{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:64px 0;border-bottom:1px solid var(--smoke)}
+.cblock:last-child{border-bottom:none}.cblock.r .cb-txt{order:2}.cblock.r .cb-img{order:1}
+.cb-txt .label{margin-bottom:10px}.cb-txt h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.3rem;line-height:1.2;margin-bottom:12px}
+.cb-txt p{color:var(--mist);line-height:1.85;font-size:.9rem}.cb-img .media-slot{height:320px}
+
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:56px;background:rgba(255,255,255,.06);border-radius:16px;overflow:hidden}
+.fcard{background:var(--charcoal);padding:36px 28px;transition:all .4s var(--ease);position:relative}
+.fcard::before{content:'';position:absolute;top:0;left:28px;right:28px;height:1px;background:linear-gradient(90deg,transparent,var(--olive),transparent);opacity:0;transition:opacity .4s}
+.fcard:hover::before{opacity:1}.fcard:hover{background:var(--slate)}
+.fcard-num{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:2.8rem;color:var(--stone);line-height:1;margin-bottom:16px;transition:color .4s}
+.fcard:hover .fcard-num{color:var(--olive)}
+.fcard h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:.9rem;color:var(--white);margin-bottom:8px}
+.fcard p{font-size:.82rem;color:var(--fog);line-height:1.65}
+
+.specs{margin-top:48px;border-radius:14px;overflow:hidden;border:1px solid var(--smoke)}
+.spec-row{display:flex;border-bottom:1px solid var(--smoke);transition:background .2s}.spec-row:last-child{border-bottom:none}.spec-row:hover{background:var(--pearl)}
+.spec-k{flex:0 0 220px;padding:16px 24px;font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:1px;text-transform:uppercase;color:var(--olive);background:var(--pearl)}
+.spec-v{flex:1;padding:16px 24px;color:var(--mist);font-size:.88rem;border-left:1px solid var(--smoke)}
+
+.pheader{position:relative;padding:160px 48px 80px;overflow:hidden;background:var(--ink)}
+.pheader-bg{position:absolute;inset:0;opacity:.3}.pheader-bg .media-slot{width:100%;height:100%;border:none;border-radius:0}
+.pheader-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,12,10,.6),rgba(10,12,10,.9))}
+.pheader-c{position:relative;z-index:2;max-width:1200px;margin:0 auto}
+.pheader h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.02em;margin-bottom:16px;color:var(--white)}
+.pheader p{color:var(--fog);max-width:560px;line-height:1.8;font-size:.95rem}
+
+.cinfo{display:flex;flex-direction:column;gap:2px;border-radius:14px;overflow:hidden}
+.cinfo-b{padding:24px 28px;background:var(--pearl);transition:background .3s}.cinfo-b:hover{background:var(--smoke)}
+.cinfo-b h4{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--olive);margin-bottom:8px}
+.cinfo-b p{color:var(--mist);font-size:.88rem;line-height:1.65}
+
+.cta{position:relative;padding:100px 48px;background:var(--ink);text-align:center;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,var(--olive-glow),transparent 50%);animation:ctaGlow 8s ease infinite alternate}
+@keyframes ctaGlow{0%{transform:translate(-10%,-10%)}100%{transform:translate(10%,10%)}}
+.cta>*{position:relative;z-index:1}.cta .label{color:var(--olive-light)}
+.cta h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3rem);color:var(--white);margin-bottom:16px}
+.cta p{color:var(--fog);max-width:460px;margin:0 auto 36px;font-size:.93rem;line-height:1.8}
+
+.vbanner{position:relative;height:480px;overflow:hidden}.vbanner .media-slot{width:100%;height:100%;border:none;border-radius:0}
+.vbanner-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,12,10,.88),rgba(10,12,10,.4));display:flex;align-items:center;padding:0 48px}
+.vbanner-c{max-width:1200px;margin:0 auto;width:100%}
+
+.footer{padding:72px 48px 28px;background:var(--ink)}
+.footer-g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;max-width:1200px;margin:0 auto}
+.footer-brand p{font-size:.82rem;line-height:1.7;margin-top:16px;color:var(--stone)}
+.footer h4{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:3px;text-transform:uppercase;color:var(--stone);margin-bottom:20px}
+.flinks{list-style:none}.flinks li{margin-bottom:10px}.flinks a{font-size:.82rem;color:var(--mist);transition:all .3s}.flinks a:hover{color:var(--olive-light)}
+.footer-bot{max-width:1200px;margin:48px auto 0;padding-top:20px;border-top:1px solid var(--charcoal);display:flex;justify-content:space-between;font-size:.55rem;color:var(--stone);font-family:'JetBrains Mono',monospace;letter-spacing:1px}
+
+.rv{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease-dramatic),transform .8s var(--ease-dramatic)}
+
+/* Config Module */
+.cfg-section{padding:100px 48px;border-bottom:1px solid var(--smoke)}
+.cfg-section:last-of-type{border-bottom:none}
+.cfg-head{display:flex;align-items:flex-start;justify-content:space-between;gap:48px;margin-bottom:48px}
+.cfg-head-txt{max-width:560px}
+.cfg-num{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:5rem;line-height:.85;color:var(--smoke);letter-spacing:-.04em;flex-shrink:0}
+.cfg-grid{display:grid;gap:12px}
+.cfg-grid-3{grid-template-columns:repeat(3,1fr)}
+.cfg-grid-4{grid-template-columns:repeat(4,1fr)}
+.cfg-grid-5{grid-template-columns:repeat(5,1fr)}
+.cfg-card{background:var(--pearl);border:1px solid var(--smoke);border-radius:14px;padding:28px 24px;transition:all .4s var(--ease);position:relative;overflow:hidden}
+.cfg-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--olive);transform:scaleX(0);transition:transform .4s var(--ease);transform-origin:left}
+.cfg-card:hover{border-color:var(--olive);background:var(--white);box-shadow:0 8px 30px rgba(0,0,0,.06);transform:translateY(-4px)}
+.cfg-card:hover::before{transform:scaleX(1)}
+.cfg-card h4{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.88rem;margin-bottom:6px;color:var(--ink)}
+.cfg-card p{font-size:.78rem;color:var(--mist);line-height:1.6}
+
+.rv.vis{opacity:1;transform:translateY(0)}.rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}
+
+@media(max-width:1024px){.pgrid,.fgrid{grid-template-columns:repeat(2,1fr)}.pcard-img{height:260px}.comp-grid{grid-template-columns:repeat(2,1fr) !important}.cfg-grid-3,.cfg-grid-4,.cfg-grid-5{grid-template-columns:repeat(2,1fr)}.cfg-head{flex-direction:column}.cfg-num{font-size:3rem}}
+@media(max-width:768px){
+  .nav{padding:0 20px;height:64px}.nav-links{display:none}.nav-toggle{display:block}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--smoke);padding:16px;box-shadow:0 20px 40px rgba(0,0,0,.06)}
+  .section{padding:80px 20px}.pgrid,.fgrid,.cfg-grid-3,.cfg-grid-4,.cfg-grid-5{grid-template-columns:1fr}.pcard-img{height:280px}
+  [style*="repeat(4"]{grid-template-columns:1fr !important}
+  .split,.cblock{grid-template-columns:1fr;gap:36px}
+  .split.r .sp-txt,.split.r .sp-img,.cblock.r .cb-txt,.cblock.r .cb-img{order:unset}
+  .footer-g{grid-template-columns:1fr;gap:28px}.footer-bot{flex-direction:column;gap:8px;text-align:center}
+  .hero-content{padding:0 24px 56px}.hero h1{font-size:clamp(2.4rem,10vw,3.6rem)}
+  .pheader{padding:120px 20px 60px}.hero-actions{flex-direction:column}
+  .gallery-pair{grid-template-columns:1fr}.spec-k{flex:0 0 120px;font-size:.5rem}
+  .showcase .media-slot{height:320px}.hero-scroll{display:none}.vbanner{height:360px}.vbanner-ov{padding:0 20px}
+  .cta{padding:72px 20px}.cfg-section{padding:60px 20px}
+}
+</style>
+</head>
+<body>
+<nav class="nav" id="navbar">
+  <div class="nav-logo" onclick="go('home')"><img src="logo-dark.png" alt="ALPA Systems" style="height:36px"></div>
+  <button class="nav-toggle" onclick="document.getElementById('nv').classList.toggle('open')"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nv">
+    <li><a href="#" data-p="home" class="active" onclick="go('home')">Home</a></li>
+    <li><a href="#" data-p="about" onclick="go('about')">About Us</a></li>
+    <li><a href="#" data-p="platform" onclick="go('platform')">Platform</a></li>
+    <li class="nav-dd"><a href="#" data-p="products" onclick="go('products')">Products</a><div class="nav-dd-menu"><a href="#" onclick="go('fpv')">Fiber Optic FPV Drone</a><a href="#" onclick="go('bomber')">Bomber Drone</a><a href="#" onclick="go('sentinel')">Sentinel Drone</a></div></li>
+    <li><a href="#" data-p="technology" onclick="go('technology')">Technology</a></li>
+    <li><a href="#" data-p="contact" onclick="go('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+<div id="p-home" class="page active">
+<section class="hero">
+  <div class="hero-media"><div class="media-slot" style="border-radius:0"><video src="hero-home.mp4" autoplay loop muted playsinline style="object-fit:cover"></video></div></div>
+  <div class="hero-grad"><div class="hero-grad-top"></div><div class="hero-grad-bot"></div></div>
+  <div class="hero-content"><div class="container">
+    <div class="hero-eyebrow">Defense & Unmanned Systems</div>
+    <h1><span class="olive">Simple.</span> Modular.<br><span class="sand">Unstoppable.</span></h1>
+    <p class="hero-desc">Accessible technology applied to modular, efficient, and low-cost unmanned systems. Ready to deploy without long development cycles.</p>
+    <div class="hero-actions">
+      <a class="btn btn-fill" onclick="go('products')"><span>Explore Products</span><svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="btn btn-light" onclick="go('contact')"><span>Contact Us</span></a>
+    </div>
+  </div></div>
+  <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
+</section>
+
+<section class="section" style="padding:100px 48px;background:var(--pearl)" data-nav="light"><div class="container">
+  <div class="label rv">Our Platforms</div><h2 class="title rv">Built for the<br>Battlefield</h2>
+  <p class="desc rv">Affordable, effective, and modular. Designed to integrate fast and stay reliable under any electronic environment.</p>
+  <div class="pgrid">
+    <div class="pcard rv rv-d1" onclick="go('fpv')"><div class="pcard-img"><img src="fpv-main.png" alt="FPV Drone"></div><div class="pcard-info"><h3>Fiber-Optic FPV Drone</h3><p>EW-resilient loitering drone with fiber-optic link.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+    <div class="pcard rv rv-d2" onclick="go('bomber')"><div class="pcard-img"><img src="bomber-main.png" alt="Bomber Drone"></div><div class="pcard-info"><h3>Bomber Drone</h3><p>Precision strike with mortar cartridge payload.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+    <div class="pcard rv rv-d3" onclick="go('sentinel')"><div class="pcard-img"><img src="sentinel-main.png" alt="Sentinel Drone"></div><div class="pcard-info"><h3>Sentinel Drone</h3><p>Tethered platform with unlimited endurance.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+  </div>
+</div></section>
+
+<!-- Platform Teaser -->
+<section class="section-dark" style="padding:100px 48px"><div class="container"><div class="split rv">
+  <div class="sp-txt"><div class="label" style="color:var(--olive-light)">The Platform</div><h2 class="title" style="font-size:clamp(1.8rem,3vw,2.6rem);color:var(--white)">One System.<br>Every Mission.</h2><p style="color:var(--fog);line-height:1.85;font-size:.93rem">A single standardized platform — VR goggles, controller, and universal cradle — that adapts to any mission by swapping a single box. No retraining. No rewiring. Just swap and deploy.</p><div style="margin-top:28px"><a class="btn btn-light" onclick="go('platform')"><span>Discover the Platform</span><svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+  <div class="sp-img"><div class="media-slot" style="height:420px"><img src="platform-system.png" alt="ALPA Platform System" style="object-fit:cover;width:100%;height:100%"></div></div>
+</div></div></section>
+
+<section class="section" style="background:var(--white)"><div class="container"><div class="split rv">
+  <div class="sp-txt"><div class="label">Who We Are</div><h2 class="title" style="font-size:clamp(1.8rem,3vw,2.4rem)">Technology with<br>Purpose</h2><p>ALPA Systems designs, builds, and deploys unmanned defense solutions from Madrid, Spain. Our focus is simplicity, modularity, and cost-effectiveness.</p><div style="margin-top:28px"><a class="btn btn-ghost" onclick="go('about')"><span>About Us</span><svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+  <div class="sp-img"><div class="media-slot"><img src="about-home.png" alt="ALPA About" style="object-fit:cover"></div></div>
+</div></div></section>
+
+<div class="vbanner"><div class="media-slot" style="border-radius:0"><img src="tech-banner.png" alt="Technology" style="object-fit:cover"></div><div class="vbanner-ov"><div class="vbanner-c">
+  <div class="label" style="color:var(--olive-light)">Technology</div><h2 class="title" style="color:var(--white);font-size:clamp(1.8rem,3.5vw,2.8rem)">180 Possible<br>Configurations</h2><p class="desc" style="color:var(--fog)">Four customization axes — communications, payload, attack strategy, and power — combine to create the exact drone your mission demands.</p>
+  <div style="margin-top:28px"><a class="btn btn-light" onclick="go('technology')"><span>Explore Configurations</span><svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div></div></div>
+
+<div class="cta"><div class="label">Get Started</div><h2>Ready to Talk?</h2><p>We collaborate with defense, security, and government organizations seeking modular and affordable unmanned systems.</p><a class="btn btn-fill" onclick="go('contact')"><span>Contact Us</span><svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div>
+
+<div id="p-about" class="page">
+<div class="pheader"><div class="pheader-bg"><div class="media-slot"><img src="about-hero.png" alt="About" style="object-fit:cover"></div></div><div class="pheader-ov"></div><div class="pheader-c"><div class="label rv" style="color:var(--olive-light)">About Us</div><h1 class="rv">Engineering<br>the Future of<br>Defense</h1><p class="rv" style="color:var(--fog)">A team of engineers and defense specialists building the next generation of unmanned systems from Spain.</p></div></div>
+<section class="section" style="background:var(--white)"><div class="container">
+  <div class="cblock rv"><div class="cb-txt"><div class="label">The Team</div><h3>Built by Engineers</h3><p>A multidisciplinary team spanning aeronautics, electronics, and software engineering.</p></div><div class="cb-img"><div class="media-slot"><img src="about-team.png" alt="Team" style="object-fit:cover"></div></div></div>
+  <div class="cblock r rv"><div class="cb-txt"><div class="label">What We Do</div><h3>Defense Innovation</h3><p>We develop unmanned systems that are modular, affordable, and resilient.</p></div><div class="cb-img"><div class="media-slot"><img src="about-mission.png" alt="Mission" style="object-fit:cover"></div></div></div>
+  <div class="cblock rv"><div class="cb-txt"><div class="label">Philosophy</div><h3>Simple by Design</h3><p>Complexity is the enemy of reliability. We build systems that work under pressure.</p></div><div class="cb-img"><div class="media-slot"><img src="about-philosophy.png" alt="Philosophy" style="object-fit:cover"></div></div></div>
+  <div class="cblock r rv"><div class="cb-txt"><div class="label">Origin</div><h3>100% Made in Spain</h3><p>Full design-to-production pipeline in Madrid. Complete control over every component.</p></div><div class="cb-img"><div class="media-slot"><img src="about-spain.png" alt="Spain" style="object-fit:cover"></div></div></div>
+</div></section></div>
+
+<!-- ================================================================
+     PLATFORM
+================================================================= -->
+<div id="p-platform" class="page">
+<div class="pheader" style="padding-bottom:100px">
+  <div class="pheader-bg"><div class="media-slot"><img src="platform-hero.png" alt="ALPA Platform" style="object-fit:cover"></div></div>
+  <div class="pheader-ov"></div>
+  <div class="pheader-c">
+    <div class="label rv" style="color:var(--olive-light)">The Platform</div>
+    <h1 class="rv">One System.<br>Every Mission.</h1>
+    <p class="rv" style="color:var(--fog)">A standardized, modular control platform that adapts to any mission objective. Same interface, same cradle, different capability — in seconds.</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--white)"><div class="container"><div class="split rv">
+  <div class="sp-txt"><div class="label">The Concept</div><h2 class="title" style="font-size:clamp(1.6rem,2.8vw,2.2rem)">Standardized by Design.<br>Versatile by Nature.</h2><p style="color:var(--mist);line-height:1.85;font-size:.93rem;margin-bottom:14px">The ALPA Platform is the core of everything we build. Instead of developing isolated systems for each mission, we created a single standardized interface that accepts interchangeable mission modules.</p><p style="color:var(--mist);line-height:1.85;font-size:.93rem">One operator. One set of controls. One universal cradle. Swap the mission box, and the entire system transforms — from reconnaissance to precision strike to persistent surveillance.</p></div>
+  <div class="sp-img"><div class="media-slot" style="height:420px"><img src="platform-system.png" alt="Complete Platform" style="object-fit:cover;width:100%;height:100%"></div></div>
+</div></div></section>
+
+<section class="section" style="background:var(--pearl)"><div class="container">
+  <div class="label rv">Components</div><h2 class="title rv">What Makes Up<br>the Platform</h2><p class="desc rv">Four components. One unified system. Each designed for maximum interoperability and minimum complexity.</p>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px">
+    <div class="rv rv-d1" style="background:var(--white);border-radius:16px;border:1px solid var(--smoke);overflow:hidden"><div style="height:200px;background:linear-gradient(180deg,#e8ece8,#d8ddd8);display:flex;align-items:center;justify-content:center;padding:20px;position:relative"><img src="platform-goggles.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=text-align:center><svg width=40 height=40 viewBox=&quot;0 0 24 24&quot; fill=none stroke=%239ca49c stroke-width=1.2><circle cx=12 cy=12 r=10/><path d=&quot;M8 14s1.5 2 4 2 4-2 4-2&quot;/><line x1=9 y1=9 x2=9.01 y2=9/><line x1=15 y1=9 x2=15.01 y2=9/></svg><div style=font-family:JetBrains+Mono;font-size:.55rem;color:%239ca49c;margin-top:8px;letter-spacing:1px>GOGGLES</div></div>'"></div><div style="padding:24px"><h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:8px">VR Goggles</h3><p style="color:var(--mist);font-size:.82rem;line-height:1.65">Immersive first-person view with real-time HD feed and heads-up mission data overlay.</p></div></div>
+    <div class="rv rv-d2" style="background:var(--white);border-radius:16px;border:1px solid var(--smoke);overflow:hidden"><div style="height:200px;background:#d8ddd8;position:relative;overflow:hidden"><img src="platform-controller.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=text-align:center><svg width=40 height=40 viewBox=&quot;0 0 24 24&quot; fill=none stroke=%239ca49c stroke-width=1.2><rect x=2 y=6 width=20 height=12 rx=3/><circle cx=8 cy=12 r=2/><circle cx=16 cy=12 r=2/></svg><div style=font-family:JetBrains+Mono;font-size:.55rem;color:%239ca49c;margin-top:8px;letter-spacing:1px>CONTROLLER</div></div>'"></div><div style="padding:24px"><h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:8px">Controller</h3><p style="color:var(--mist);font-size:.82rem;line-height:1.65">Ergonomic remote with tactile feedback. Designed for gloved operation in any conditions.</p></div></div>
+    <div class="rv rv-d3" style="background:var(--white);border-radius:16px;border:1px solid var(--smoke);overflow:hidden"><div style="height:200px;background:#d8ddd8;position:relative;overflow:hidden"><img src="platform-cradle.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=text-align:center><svg width=40 height=40 viewBox=&quot;0 0 24 24&quot; fill=none stroke=%239ca49c stroke-width=1.2><path d=&quot;M4 15l8 4 8-4&quot;/><path d=&quot;M4 11l8 4 8-4&quot;/><path d=&quot;M4 7l8 4 8-4&quot;/></svg><div style=font-family:JetBrains+Mono;font-size:.55rem;color:%239ca49c;margin-top:8px;letter-spacing:1px>CRADLE</div></div>'"></div><div style="padding:24px"><h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:8px">Universal Cradle</h3><p style="color:var(--mist);font-size:.82rem;line-height:1.65">Standardized mounting that accepts any ALPA mission box. Vehicle or ground deployed.</p></div></div>
+    <div class="rv" style="background:var(--white);border-radius:16px;border:1px solid var(--smoke);overflow:hidden;transition-delay:.32s"><div style="height:200px;background:#d8ddd8;position:relative;overflow:hidden"><img src="platform-box.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=text-align:center><svg width=40 height=40 viewBox=&quot;0 0 24 24&quot; fill=none stroke=%239ca49c stroke-width=1.2><path d=&quot;M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z&quot;/><polyline points=&quot;3.27 6.96 12 12.01 20.73 6.96&quot;/><line x1=12 y1=22.08 x2=12 y2=12/></svg><div style=font-family:JetBrains+Mono;font-size:.55rem;color:%239ca49c;margin-top:8px;letter-spacing:1px>MISSION BOX</div></div>'"></div><div style="padding:24px"><h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:8px">Mission Box</h3><p style="color:var(--mist);font-size:.82rem;line-height:1.65">Interchangeable payload module. Each box contains a complete mission-ready system. Swap in seconds.</p></div></div>
+  </div>
+</div></section>
+
+<section class="section" style="background:var(--white)"><div class="container"><div class="split r rv">
+  <div class="sp-txt"><div class="label">User Experience</div><h2 class="title" style="font-size:clamp(1.6rem,2.8vw,2.2rem)">Zero Training.<br>Full Capability.</h2><p style="color:var(--mist);line-height:1.85;font-size:.93rem;margin-bottom:14px">The platform was designed around the operator — not the other way around. VR goggles provide an immersive, intuitive first-person experience that feels natural from the first use.</p><p style="color:var(--mist);line-height:1.85;font-size:.93rem">Any soldier who can use a gaming controller can operate the ALPA Platform. The interface remains identical regardless of which mission module is loaded — learn once, operate everything.</p></div>
+  <div class="sp-img"><div class="media-slot" style="height:420px"><img src="platform-ux.png" alt="Operator using platform" style="object-fit:cover;width:100%;height:100%"></div></div>
+</div></div></section>
+
+<section class="section-dark" style="padding:100px 48px"><div class="container">
+  <div class="label rv" style="color:var(--olive-light)">Modularity</div><h2 class="title rv" style="color:var(--white)">Swap the Box.<br>Change the Mission.</h2><p class="desc rv" style="color:var(--fog);margin-bottom:56px">The same cradle and operator interface supports every ALPA drone. Mission changes happen in the field — not the factory.</p>
+  <div class="split rv">
+    <div class="sp-img"><div class="media-slot" style="height:420px"><img src="platform-swap.png" alt="Mission Box Swap" style="object-fit:cover;width:100%;height:100%"></div></div>
+    <div class="sp-txt"><div class="fgrid" style="grid-template-columns:1fr;gap:1px;margin-top:0">
+      <div class="fcard"><div class="fcard-num">01</div><h3>Same Cradle, Different Mission</h3><p>The universal mount accepts FPV, Bomber, and Sentinel boxes with a single click-in mechanism.</p></div>
+      <div class="fcard"><div class="fcard-num">02</div><h3>Field-Swappable in Seconds</h3><p>No tools. No rewiring. Remove one box, insert another. Auto-detection and configuration.</p></div>
+      <div class="fcard"><div class="fcard-num">03</div><h3>Pre-Installed & Ready</h3><p>Each box arrives pre-configured. Logistics carries boxes, not entire systems.</p></div>
+    </div></div>
+  </div>
+</div></section>
+
+<section class="section" style="background:var(--white)"><div class="container">
+  <div class="label rv">Specifications</div><h2 class="title rv">Platform Specifications</h2>
+  <div class="specs rv">
+    <div class="spec-row"><div class="spec-k">Interface</div><div class="spec-v">VR goggles + ergonomic controller — immersive FPV</div></div>
+    <div class="spec-row"><div class="spec-k">Mounting</div><div class="spec-v">Universal cradle — vehicle or ground deployment</div></div>
+    <div class="spec-row"><div class="spec-k">Modules</div><div class="spec-v">Interchangeable mission boxes — FPV, Bomber, Sentinel</div></div>
+    <div class="spec-row"><div class="spec-k">Swap Time</div><div class="spec-v">Under 60 seconds — no tools required</div></div>
+    <div class="spec-row"><div class="spec-k">Training</div><div class="spec-v">Near-zero — intuitive VR interface, learn once operate all</div></div>
+    <div class="spec-row"><div class="spec-k">Comms</div><div class="spec-v">Fiber-optic standard across all modules — EW immune</div></div>
+    <div class="spec-row"><div class="spec-k">Origin</div><div class="spec-v">100% designed & manufactured in Spain</div></div>
+  </div>
+</div></section>
+
+<section class="section" style="padding:100px 48px;background:var(--pearl)"><div class="container">
+  <div class="label rv">Compatible Systems</div><h2 class="title rv">Mission Modules</h2><p class="desc rv">Each product in the ALPA ecosystem plugs directly into the platform.</p>
+  <div class="pgrid">
+    <div class="pcard rv rv-d1" onclick="go('fpv')"><div class="pcard-img"><img src="fpv-main.png" alt="FPV"></div><div class="pcard-info"><h3>FPV Module</h3><p>Fiber-optic loitering drone for recon and strike.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+    <div class="pcard rv rv-d2" onclick="go('bomber')"><div class="pcard-img"><img src="bomber-main.png" alt="Bomber"></div><div class="pcard-info"><h3>Bomber Module</h3><p>Vertical strike with mortar cartridge.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+    <div class="pcard rv rv-d3" onclick="go('sentinel')"><div class="pcard-img"><img src="sentinel-main.png" alt="Sentinel"></div><div class="pcard-info"><h3>Sentinel Module</h3><p>Tethered persistent surveillance and fire.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+  </div>
+</div></section>
+</div>
+
+<div id="p-products" class="page">
+<div class="pheader"><div class="pheader-bg"><div class="media-slot"><img src="products-hero.png" alt="Products" style="object-fit:cover"></div></div><div class="pheader-ov"></div><div class="pheader-c"><div class="label rv" style="color:var(--olive-light)">Products</div><h1 class="rv">Mission<br>Modules</h1><p class="rv" style="color:var(--fog)">Three interchangeable mission systems. All compatible with the ALPA Platform. One cradle, one interface — swap and deploy.</p></div></div>
+<section class="section" style="padding:100px 48px;background:var(--pearl)" data-nav="light"><div class="container"><div class="pgrid">
+  <div class="pcard rv rv-d1" onclick="go('fpv')"><div class="pcard-img"><img src="fpv-main.png" alt="FPV"></div><div class="pcard-info"><h3>Fiber-Optic FPV Drone</h3><p>EW-resilient with fiber-optic datalink.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+  <div class="pcard rv rv-d2" onclick="go('bomber')"><div class="pcard-img"><img src="bomber-main.png" alt="Bomber"></div><div class="pcard-info"><h3>Bomber Drone</h3><p>Mortar cartridge for vertical strike.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+  <div class="pcard rv rv-d3" onclick="go('sentinel')"><div class="pcard-img"><img src="sentinel-main.png" alt="Sentinel"></div><div class="pcard-info"><h3>Sentinel Drone</h3><p>Tethered with unlimited endurance.</p><span class="pcard-link">Explore <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div>
+</div></div></section>
+<section class="section" style="background:var(--white)"><div class="container">
+  <div class="cblock rv"><div class="cb-txt"><div class="label">01</div><h3>Cost Efficiency</h3><p>Mature technologies with established economies of scale. Highly capable systems at significantly lower costs.</p></div><div class="cb-img"><div class="media-slot"><img src="why-cost.png" alt="Cost" style="object-fit:cover"></div></div></div>
+  <div class="cblock r rv"><div class="cb-txt"><div class="label">02</div><h3>Proven Technology</h3><p>Tested in real operational environments. Built for resilience rather than complexity.</p></div><div class="cb-img"><div class="media-slot"><img src="why-proven.png" alt="Proven" style="object-fit:cover"></div></div></div>
+  <div class="cblock rv"><div class="cb-txt"><div class="label">03</div><h3>National Development</h3><p>Designed, developed, and manufactured in Spain. Full sovereignty over the supply chain.</p></div><div class="cb-img"><div class="media-slot"><img src="why-national.png" alt="National" style="object-fit:cover"></div></div></div>
+</div></section></div>
+
+<div id="p-fpv" class="page">
+<div class="pheader" style="padding-bottom:100px"><div class="pheader-bg"><div class="media-slot"><img src="fpv-main.png" alt="FPV" style="object-fit:contain;padding:40px"></div></div><div class="pheader-ov"></div><div class="pheader-c"><div class="label rv" style="color:var(--olive-light)">Product</div><h1 class="rv">Fiber-Optic<br>FPV Drone</h1><p class="rv" style="color:var(--fog)">Compact, mission-configurable FPV platform with fiber-optic communications. Fully immune to electronic warfare.</p></div></div>
+<section class="section" style="background:var(--white)"><div class="container"><div class="label rv">Gallery</div><h2 class="title rv">The System</h2><div class="gallery-main rv"><div class="media-slot"><img src="fpv-main.png" alt="FPV Main"></div></div><div class="gallery-pair"><div class="rv rv-d1"><div class="media-slot"><img src="fpv-2.png" alt="FPV 2"></div></div><div class="rv rv-d2"><div class="media-slot"><img src="fpv-3.png" alt="FPV 3"></div></div></div></div></section>
+<section class="section-dark" style="padding:100px 48px;text-align:center"><div class="container"><div class="label rv">360° View</div><h2 class="title rv">Product Showcase</h2><p class="desc rv" style="margin:0 auto 48px">Detailed 360-degree view of the system.</p><div class="showcase rv"><div class="media-slot"><video src="fpv-360.mp4" autoplay loop muted playsinline></video></div></div></div></section>
+<section class="section" style="background:var(--white)"><div class="container"><div class="rv" style="max-width:680px"><div class="label">Overview</div><h2 class="title" style="font-size:clamp(1.6rem,2.5vw,2rem)">System Overview</h2><p class="desc" style="max-width:100%">Reusable ground control suite with expendable mission drone packages. Each drone connects via fiber-optic cable — zero-latency HD video with complete immunity to RF jamming.</p><p class="desc" style="max-width:100%;margin-top:16px">Multiple warhead configurations. Field-swappable in under 60 seconds.</p></div></div></section>
+<section class="section-dark" style="padding:100px 48px"><div class="container"><div class="label rv">Features</div><h2 class="title rv">Characteristics</h2><div class="fgrid"><div class="fcard rv rv-d1"><div class="fcard-num">01</div><h3>Fiber-Optic Link</h3><p>HD video/telemetry. EW immune. Zero latency.</p></div><div class="fcard rv rv-d2"><div class="fcard-num">02</div><h3>Modular Warheads</h3><p>Swap payloads for anti-personnel, anti-equipment.</p></div><div class="fcard rv rv-d3"><div class="fcard-num">03</div><h3>Vehicle Launch</h3><p>Deploy from moving or stationary vehicles.</p></div><div class="fcard rv rv-d1"><div class="fcard-num">04</div><h3>Loitering Mode</h3><p>Persistent presence over the target area.</p></div><div class="fcard rv rv-d2"><div class="fcard-num">05</div><h3>Reusable GCS</h3><p>Expendable drone, reusable ground control.</p></div><div class="fcard rv rv-d3"><div class="fcard-num">06</div><h3>60s Field Swap</h3><p>Change payload configuration in under a minute.</p></div></div></div></section>
+<section class="section" style="background:var(--white)"><div class="container"><div class="label rv">Data Sheet</div><h2 class="title rv">Technical Specifications</h2><div class="specs rv"><div class="spec-row"><div class="spec-k">Communication</div><div class="spec-v">Fiber-optic — EW immune, zero latency</div></div><div class="spec-row"><div class="spec-k">Range</div><div class="spec-v">Up to 20km (fiber spool dependent)</div></div><div class="spec-row"><div class="spec-k">Payload</div><div class="spec-v">Modular warhead system — field-swappable</div></div><div class="spec-row"><div class="spec-k">Deployment</div><div class="spec-v">Vehicle-mounted or ground-based launcher</div></div><div class="spec-row"><div class="spec-k">Video</div><div class="spec-v">HD real-time via fiber-optic cable</div></div><div class="spec-row"><div class="spec-k">Platform</div><div class="spec-v">Fully compatible with ALPA Universal Platform</div></div><div class="spec-row"><div class="spec-k">Origin</div><div class="spec-v">100% designed & produced in Spain</div></div></div></div></section>
+</div>
+
+<div id="p-bomber" class="page">
+<div class="pheader" style="padding-bottom:100px"><div class="pheader-bg"><div class="media-slot"><img src="bomber-main.png" alt="Bomber" style="object-fit:contain;padding:40px"></div></div><div class="pheader-ov"></div><div class="pheader-c"><div class="label rv" style="color:var(--olive-light)">Product</div><h1 class="rv">Bomber<br>Drone</h1><p class="rv" style="color:var(--fog)">Precision vertical-strike platform with mortar cartridge payload.</p></div></div>
+<section class="section" style="background:var(--white)"><div class="container"><div class="label rv">Gallery</div><h2 class="title rv">The System</h2><div class="gallery-main rv"><div class="media-slot"><img src="bomber-main.png" alt="Bomber Main"></div></div><div class="gallery-pair"><div class="rv rv-d1"><div class="media-slot"><img src="bomber-2.png" alt="Bomber 2"></div></div><div class="rv rv-d2"><div class="media-slot"><img src="bomber-3.png" alt="Bomber 3"></div></div></div></div></section>
+<section class="section-dark" style="padding:100px 48px;text-align:center"><div class="container"><div class="label rv">360° View</div><h2 class="title rv">Product Showcase</h2><div class="showcase rv"><div class="media-slot"><video src="bomber-360.mp4" autoplay loop muted playsinline></video></div></div></div></section>
+<section class="section" style="background:var(--white)"><div class="container"><div class="rv" style="max-width:680px"><div class="label">Overview</div><h2 class="title" style="font-size:clamp(1.6rem,2.5vw,2rem)">System Overview</h2><p class="desc" style="max-width:100%">Carries a mortar cartridge and releases it from altitude for precision vertical strikes. Bypasses horizontal defenses and cover.</p><p class="desc" style="max-width:100%;margin-top:16px">Lightweight, affordable, simple to operate.</p></div></div></section>
+<section class="section-dark" style="padding:100px 48px"><div class="container"><div class="label rv">Features</div><h2 class="title rv">Characteristics</h2><div class="fgrid"><div class="fcard rv rv-d1"><div class="fcard-num">01</div><h3>Vertical Strike</h3><p>Top-down engagement bypasses cover.</p></div><div class="fcard rv rv-d2"><div class="fcard-num">02</div><h3>Mortar Cartridge</h3><p>Standard mortar round for proven lethality.</p></div><div class="fcard rv rv-d3"><div class="fcard-num">03</div><h3>Low Cost</h3><p>Affordable for high-volume deployment.</p></div><div class="fcard rv rv-d1"><div class="fcard-num">04</div><h3>Simple Operation</h3><p>Minimal training for field deployment.</p></div><div class="fcard rv rv-d2"><div class="fcard-num">05</div><h3>Altitude Hold</h3><p>Stable positioning for precision release.</p></div><div class="fcard rv rv-d3"><div class="fcard-num">06</div><h3>Compact Design</h3><p>Lightweight, single operator portable.</p></div></div></div></section>
+<section class="section" style="background:var(--white)"><div class="container"><div class="label rv">Data Sheet</div><h2 class="title rv">Technical Specifications</h2><div class="specs rv"><div class="spec-row"><div class="spec-k">Payload</div><div class="spec-v">Mortar cartridge — vertical release</div></div><div class="spec-row"><div class="spec-k">Attack Profile</div><div class="spec-v">Top-down vertical strike from altitude</div></div><div class="spec-row"><div class="spec-k">Weight Class</div><div class="spec-v">Ultra-light — single operator portable</div></div><div class="spec-row"><div class="spec-k">Deployment</div><div class="spec-v">Field-deployable, minimal setup</div></div><div class="spec-row"><div class="spec-k">Integration</div><div class="spec-v">Complements FPV and Sentinel platforms</div></div><div class="spec-row"><div class="spec-k">Platform</div><div class="spec-v">Fully compatible with ALPA Universal Platform</div></div><div class="spec-row"><div class="spec-k">Origin</div><div class="spec-v">100% designed & produced in Spain</div></div></div></div></section>
+</div>
+
+<div id="p-sentinel" class="page">
+<div class="pheader" style="padding-bottom:100px"><div class="pheader-bg"><div class="media-slot"><img src="sentinel-main.png" alt="Sentinel" style="object-fit:contain;padding:40px"></div></div><div class="pheader-ov"></div><div class="pheader-c"><div class="label rv" style="color:var(--olive-light)">Product</div><h1 class="rv">Sentinel<br>Drone</h1><p class="rv" style="color:var(--fog)">Tethered aerial platform with unlimited endurance. Persistent surveillance and fire capability.</p></div></div>
+<section class="section" style="background:var(--white)"><div class="container"><div class="label rv">Gallery</div><h2 class="title rv">The System</h2><div class="gallery-main rv"><div class="media-slot"><img src="sentinel-main.png" alt="Sentinel Main"></div></div><div class="gallery-pair"><div class="rv rv-d1"><div class="media-slot"><img src="sentinel-2.png" alt="Sentinel 2"></div></div><div class="rv rv-d2"><div class="media-slot"><img src="sentinel-3.png" alt="Sentinel 3"></div></div></div></div></section>
+<section class="section-dark" style="padding:100px 48px;text-align:center"><div class="container"><div class="label rv">360° View</div><h2 class="title rv">Product Showcase</h2><div class="showcase rv"><div class="media-slot"><video src="sentinel-360.mp4" autoplay loop muted playsinline></video></div></div></div></section>
+<section class="section" style="background:var(--white)"><div class="container"><div class="rv" style="max-width:680px"><div class="label">Overview</div><h2 class="title" style="font-size:clamp(1.6rem,2.5vw,2rem)">System Overview</h2><p class="desc" style="max-width:100%">Tethered to a ground vehicle via copper power cables and fiber-optic data lines. No batteries — persistent altitude presence for hours or days.</p><p class="desc" style="max-width:100%;margin-top:16px">Continuous ISR and elevated fire capability. Unjammable communications.</p></div></div></section>
+<section class="section-dark" style="padding:100px 48px"><div class="container"><div class="label rv">Features</div><h2 class="title rv">Characteristics</h2><div class="fgrid"><div class="fcard rv rv-d1"><div class="fcard-num">01</div><h3>Unlimited Endurance</h3><p>Powered directly from ground vehicle.</p></div><div class="fcard rv rv-d2"><div class="fcard-num">02</div><h3>Tethered Connection</h3><p>Copper for power, fiber-optic for data.</p></div><div class="fcard rv rv-d3"><div class="fcard-num">03</div><h3>Elevated Fire</h3><p>Fires from height for tactical advantage.</p></div><div class="fcard rv rv-d1"><div class="fcard-num">04</div><h3>Persistent ISR</h3><p>Continuous surveillance from altitude.</p></div><div class="fcard rv rv-d2"><div class="fcard-num">05</div><h3>Vehicle-Integrated</h3><p>Deploys from any compatible vehicle.</p></div><div class="fcard rv rv-d3"><div class="fcard-num">06</div><h3>EW Immune</h3><p>Physical cable eliminates all EW vulnerabilities.</p></div></div></div></section>
+<section class="section" style="background:var(--white)"><div class="container"><div class="label rv">Data Sheet</div><h2 class="title rv">Technical Specifications</h2><div class="specs rv"><div class="spec-row"><div class="spec-k">Power</div><div class="spec-v">Ground vehicle via copper tether — unlimited</div></div><div class="spec-row"><div class="spec-k">Data Link</div><div class="spec-v">Fiber-optic — zero latency, EW immune</div></div><div class="spec-row"><div class="spec-k">Capability</div><div class="spec-v">Persistent ISR + elevated fire platform</div></div><div class="spec-row"><div class="spec-k">Deployment</div><div class="spec-v">Tethered to ground vehicle</div></div><div class="spec-row"><div class="spec-k">Endurance</div><div class="spec-v">Unlimited (vehicle power dependent)</div></div><div class="spec-row"><div class="spec-k">Platform</div><div class="spec-v">Fully compatible with ALPA Universal Platform</div></div><div class="spec-row"><div class="spec-k">Origin</div><div class="spec-v">100% designed & produced in Spain</div></div></div></div></section>
+</div>
+
+<div id="p-technology" class="page">
+<div class="pheader" style="padding-bottom:100px">
+  <div class="pheader-bg"><div class="media-slot"><img src="tech-hero.png" alt="Tech" style="object-fit:cover"></div></div>
+  <div class="pheader-ov"></div>
+  <div class="pheader-c">
+    <div class="label rv" style="color:var(--olive-light)">Technology</div>
+    <h1 class="rv">Mission-Configurable<br>by Design</h1>
+    <p class="rv" style="color:var(--fog)">Every ALPA drone is fully customizable across four key dimensions — communications, payload, attack strategy, and power. Configure the exact system your mission demands.</p>
+  </div>
+</div>
+
+<!-- Intro -->
+<section class="section" style="background:var(--white)">
+  <div class="container">
+    <div class="split rv">
+      <div class="sp-txt">
+        <div class="label">The Approach</div>
+        <h2 class="title" style="font-size:clamp(1.6rem,2.8vw,2.2rem)">Four Axes of<br>Customization</h2>
+        <p style="color:var(--mist);line-height:1.85;font-size:.93rem;margin-bottom:14px">No two missions are the same. That's why every ALPA system is built around four interchangeable modules — each with multiple configurations that can be combined to create the exact drone your operation needs.</p>
+        <p style="color:var(--mist);line-height:1.85;font-size:.93rem">Communications. Payload. Attack strategy. Power. Mix and match across all four to produce a system perfectly tailored to the threat, terrain, and objective.</p>
+      </div>
+      <div class="sp-img"><div class="media-slot" style="height:420px"><img src="tech-config.png" alt="Drone Configuration" style="object-fit:cover;width:100%;height:100%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 1: COMMS -->
+<section class="cfg-section" style="background:var(--white)">
+  <div class="container">
+    <div class="cfg-head rv">
+      <div class="cfg-head-txt">
+        <div class="label">Module 01</div>
+        <h2 class="title" style="font-size:clamp(1.6rem,2.8vw,2.2rem)">Communications</h2>
+        <p class="desc">Three distinct data link options to match the electronic environment, range requirements, and jamming threat level of each mission.</p>
+      </div>
+      <div class="cfg-num">01</div>
+    </div>
+    <div class="cfg-grid cfg-grid-3">
+      <div class="cfg-card rv rv-d1">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-fiber-optic.png" alt="Fiber-Optic Link" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Fiber-Optic Link</h4>
+        <p>Physical cable delivers zero-latency HD video and telemetry with complete immunity to RF jamming. Ideal for high-EW contested environments where signal integrity is critical.</p>
+      </div>
+      <div class="cfg-card rv rv-d2">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-5g.png" alt="5G Cellular Network" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>5G Cellular Network</h4>
+        <p>Leverages existing 5G infrastructure for extended range operations with high bandwidth. Best for urban environments and areas with cellular coverage.</p>
+      </div>
+      <div class="cfg-card rv rv-d3">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-directional.png" alt="Directional Radio Antenna" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Directional Radio Antenna</h4>
+        <p>Narrowly focused radio beam that continuously tracks the drone, reducing interception probability. Balances range and resilience without physical tethering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 2: PAYLOAD -->
+<section class="cfg-section" style="background:var(--pearl)">
+  <div class="container">
+    <div class="cfg-head rv">
+      <div class="cfg-head-txt">
+        <div class="label">Module 02</div>
+        <h2 class="title" style="font-size:clamp(1.6rem,2.8vw,2.2rem)">Payload & Weapons</h2>
+        <p class="desc">Multiple warhead and weapon configurations to match the target type — from personnel to hardened fortifications.</p>
+      </div>
+      <div class="cfg-num">02</div>
+    </div>
+    <div class="cfg-grid cfg-grid-5">
+      <div class="cfg-card rv rv-d1">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-anti-personnel.png" alt="Anti-Personnel Explosive" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Anti-Personnel Explosive</h4>
+        <p>Fragmentation warhead optimized for soft targets in open or semi-covered positions.</p>
+      </div>
+      <div class="cfg-card rv rv-d2">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-anti-vehicle.png" alt="Anti-Vehicle Charge" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Anti-Vehicle Charge</h4>
+        <p>Shaped charge designed to penetrate armored vehicles and light AFVs.</p>
+      </div>
+      <div class="cfg-card rv rv-d3">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-anti-fortification.png" alt="Anti-Fortification" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Anti-Fortification</h4>
+        <p>High-explosive warhead for bunkers, reinforced structures, and defensive positions.</p>
+      </div>
+      <div class="cfg-card rv rv-d1">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-mortar-revolver.png" alt="Mortar Revolver" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Mortar Revolver</h4>
+        <p>Rotary mortar cartridge system for multiple consecutive drops from altitude over a target area.</p>
+      </div>
+      <div class="cfg-card rv rv-d2">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-mounted-weapon.png" alt="Mounted Weapon" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Mounted Weapon</h4>
+        <p>Lightweight weapon mounted on the drone for reusable, sustained engagement capability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 3: ATTACK STRATEGY -->
+<section class="cfg-section" style="background:var(--white)">
+  <div class="container">
+    <div class="cfg-head rv">
+      <div class="cfg-head-txt">
+        <div class="label">Module 03</div>
+        <h2 class="title" style="font-size:clamp(1.6rem,2.8vw,2.2rem)">Attack Strategy</h2>
+        <p class="desc">Different flight and approach profiles to defeat air defenses, avoid trajectory prediction, and overwhelm countermeasures.</p>
+      </div>
+      <div class="cfg-num">03</div>
+    </div>
+    <div class="cfg-grid cfg-grid-3">
+      <div class="cfg-card rv rv-d1">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-solo-direct.png" alt="Solo — Direct Path" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Solo — Direct Path</h4>
+        <p>Single drone with direct trajectory to target. Maximum simplicity and speed. Best for undefended or time-critical targets with minimal air defense presence.</p>
+      </div>
+      <div class="cfg-card rv rv-d2">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-solo-random.png" alt="Solo — Random Path" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Solo — Random Path</h4>
+        <p>Single drone with randomized, unpredictable trajectory changes. Prevents enemy systems from estimating flight path and computing intercept solutions.</p>
+      </div>
+      <div class="cfg-card rv rv-d3">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-swarm.png" alt="Swarm — Guide + Followers" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Swarm — Guide + Followers</h4>
+        <p>Lead drone sets the trajectory while multiple follower drones replicate the path. Saturates air defenses by overwhelming tracking and intercept capacity with volume.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 4: POWER -->
+<section class="cfg-section" style="background:var(--pearl)">
+  <div class="container">
+    <div class="cfg-head rv">
+      <div class="cfg-head-txt">
+        <div class="label">Module 04</div>
+        <h2 class="title" style="font-size:clamp(1.6rem,2.8vw,2.2rem)">Power & Endurance</h2>
+        <p class="desc">Energy configuration determines mission duration, range, and weight. From lightweight sprint batteries to unlimited tethered power.</p>
+      </div>
+      <div class="cfg-num">04</div>
+    </div>
+    <div class="cfg-grid cfg-grid-4">
+      <div class="cfg-card rv rv-d1">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-battery-small.png" alt="Small Battery" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Small Battery</h4>
+        <p>Minimum weight, maximum speed. Short-range sprint missions where agility and portability are the priority.</p>
+      </div>
+      <div class="cfg-card rv rv-d2">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-battery-medium.png" alt="Medium Battery" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Medium Battery</h4>
+        <p>Standard configuration balancing endurance and payload capacity. Covers the majority of operational scenarios.</p>
+      </div>
+      <div class="cfg-card rv rv-d3">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-battery-large.png" alt="Large Battery" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Large Battery</h4>
+        <p>Maximum onboard energy for deep penetration and extended loitering. Increased weight traded for longer time on station.</p>
+      </div>
+      <div class="cfg-card rv" style="transition-delay:.32s">
+        <div style="height:160px;margin:-28px -24px 16px;overflow:hidden;border-radius:13px 13px 0 0;background:#d8ddd8;position:relative"><img src="tech-tethered-power.png" alt="Tethered Power Cable" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><h4>Tethered Power Cable</h4>
+        <p>Direct power via copper cable from ground vehicle or position. Unlimited endurance for persistent surveillance and sustained operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Summary -->
+<section class="section-dark" style="padding:100px 48px">
+  <div class="container" style="text-align:center;max-width:800px">
+    <div class="label rv" style="color:var(--olive-light)">The Result</div>
+    <h2 class="title rv" style="color:var(--white);font-size:clamp(1.8rem,3.5vw,2.8rem)">One Drone.<br>Infinite Configurations.</h2>
+    <p class="desc rv" style="color:var(--fog);max-width:600px;margin:0 auto 24px">Combine any communication method with any payload, any attack strategy, and any power source. The ALPA platform doesn't force you into a fixed product — it adapts to the reality of your mission.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:48px 0 48px;text-align:center">
+      <div class="rv rv-d1"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:2.4rem;color:var(--olive-light)">3</div><div style="font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:2px;text-transform:uppercase;color:var(--fog);margin-top:4px">Comms Options</div></div>
+      <div class="rv rv-d2"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:2.4rem;color:var(--olive-light)">5</div><div style="font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:2px;text-transform:uppercase;color:var(--fog);margin-top:4px">Payload Types</div></div>
+      <div class="rv rv-d3"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:2.4rem;color:var(--olive-light)">3</div><div style="font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:2px;text-transform:uppercase;color:var(--fog);margin-top:4px">Attack Modes</div></div>
+      <div class="rv" style="transition-delay:.32s"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:2.4rem;color:var(--olive-light)">4</div><div style="font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:2px;text-transform:uppercase;color:var(--fog);margin-top:4px">Power Sources</div></div>
+    </div>
+    <p class="desc rv" style="color:var(--sand-light);max-width:600px;margin:0 auto 40px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.1rem">3 × 5 × 3 × 4 = 180 possible configurations</p>
+    <a class="btn btn-fill rv" onclick="go('contact')"><span>Discuss Your Configuration</span><svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</section>
+</div>
+
+<div id="p-contact" class="page">
+<div class="pheader"><div class="pheader-bg"><div class="media-slot" style="background:var(--charcoal)"></div></div><div class="pheader-ov" style="background:linear-gradient(180deg,rgba(10,12,10,.95),rgba(10,12,10,.8))"></div><div class="pheader-c"><div class="label rv" style="color:var(--olive-light)">Get in Touch</div><h1 class="rv">Let's<br>Connect</h1><p class="rv" style="color:var(--fog)">We collaborate with defense, security, and government organizations.</p></div></div>
+<section class="section" style="background:var(--white)"><div class="container" style="max-width:640px"><div class="cinfo rv"><div class="cinfo-b"><h4>Address</h4><p>Madrid, Spain</p></div><div class="cinfo-b"><h4>Email</h4><p>drones.alpa@gmail.com</p></div><div class="cinfo-b"><h4>Collaboration</h4><p>We work with defense, security, and government entities across Europe. Reach out for integration and evaluation programs.</p></div><div class="cinfo-b"><h4>Partnership Inquiries</h4><p>Open to collaboration with industry partners, defense primes, and institutional bodies.</p></div></div></div></section>
+</div>
+
+<footer class="footer"><div class="footer-g">
+  <div class="footer-brand"><div class="nav-logo" onclick="go('home')" style="cursor:pointer"><img src="logo-light.png" alt="ALPA" style="height:32px"></div><p>Modular, efficient, low-cost unmanned defense systems. Designed and produced in Spain.</p></div>
+  <div><h4>Navigation</h4><ul class="flinks"><li><a href="#" onclick="go('home')">Home</a></li><li><a href="#" onclick="go('about')">About Us</a></li><li><a href="#" onclick="go('platform')">Platform</a></li><li><a href="#" onclick="go('products')">Products</a></li><li><a href="#" onclick="go('technology')">Technology</a></li><li><a href="#" onclick="go('contact')">Contact</a></li></ul></div>
+  <div><h4>Products</h4><ul class="flinks"><li><a href="#" onclick="go('fpv')">Fiber-Optic FPV</a></li><li><a href="#" onclick="go('bomber')">Bomber Drone</a></li><li><a href="#" onclick="go('sentinel')">Sentinel Drone</a></li></ul></div>
+  <div><h4>Contact</h4><ul class="flinks"><li><a href="#">Madrid, Spain</a></li><li><a href="#">drones.alpa@gmail.com</a></li></ul></div>
+</div><div class="footer-bot"><span>© 2026 ALPA Systems. All rights reserved.</span><span>Madrid, Spain · Defense & Unmanned Systems</span></div></footer>
+
+<script>
+var nav=document.getElementById('navbar');
+function go(p){event&&event.preventDefault();document.querySelectorAll('.page').forEach(function(x){x.classList.remove('active')});var t=document.getElementById('p-'+p);if(t)t.classList.add('active');document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('active')});var l=document.querySelector('.nav-links a[data-p="'+p+'"]');if(l)l.classList.add('active');document.getElementById('nv').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});setTimeout(initRv,150);setTimeout(updateNav,100)}
+function updateNav(){var s=window.scrollY;nav.classList.toggle('scrolled',s>50);var ap=document.querySelector('.page.active');if(!ap)return;var fc=ap.firstElementChild;var isDark=fc&&(fc.classList.contains('hero')||fc.classList.contains('pheader'));var past=fc?s>fc.offsetHeight-80:false;if(isDark&&!past){nav.classList.add('nav-dark');nav.classList.remove('nav-light')}else{nav.classList.add('nav-light');nav.classList.remove('nav-dark')}}
+window.addEventListener('scroll',updateNav);
+function initRv(){var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('vis')})},{threshold:.06,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.rv').forEach(function(el){el.classList.remove('vis');o.observe(el)})}
+initRv();updateNav();
+</script>
+</body>
+</html>
